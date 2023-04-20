@@ -1,8 +1,11 @@
 # Eau
 
+<img width="1280" alt="Capture d’écran 2023-04-20 à 18 00 21" src="https://user-images.githubusercontent.com/26972581/233428072-c44a68bf-5612-4ffa-8849-68803bd88f56.png">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
 ## Mockoon conf :
+
 
 `{"openapi":"3.0.0","info":{"title":"Moments","version":"1.0.0"},"servers":[{"url":"http://localhost:3000/"}],"paths":{"/":{"get":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"Access-Control-Allow-Origin":{"schema":{"type":"string"},"example":"*"},"Access-Control-Allow-Methods":{"schema":{"type":"string"},"example":"GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"},"Access-Control-Allow-Headers":{"schema":{"type":"string"},"example":"Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"}}}}}},"/user/{id}":{"get":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"Access-Control-Allow-Origin":{"schema":{"type":"string"},"example":"*"},"Access-Control-Allow-Methods":{"schema":{"type":"string"},"example":"GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"},"Access-Control-Allow-Headers":{"schema":{"type":"string"},"example":"Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"}}}},"parameters":[{"name":"id","in":"path","schema":{"type":"string"},"required":true}]}}}}`
 
