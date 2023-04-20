@@ -1,0 +1,42 @@
+.example-container{
+  height: 100vh;
+}
+
+mat-drawer-container {
+  background-color: #1f1f1f;
+}
+
+mat-drawer {
+  background-color: #2d2f31;
+  border: none;
+}
+
+.router-link-active{
+  background-image: linear-gradient(to right bottom, #dcd1fa, #c1e1ff, #b9ecf9, #c8f3e9, #e3f6df);
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.logo {
+  background: linear-gradient(to right top, #e3f6df, #cbf1df, #b3ebe5, #a0e3ee, #99d9f7, #a0d4fb, #aacffc, #b7c9fb, #c1cbfb, #cbcdfb, #d4cffb, #dcd1fa);
+  text-align: center;
+  // border: 4px solid #e3f6df;
+  height: 48px;
+  width: 48px;
+  border-radius: 18px;
+  line-height: 36px;
+  position: relative;
+  &:before {
+    content: 'eau';
+    font-size: 19px;
+    background: #2d2f31;
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    border-radius: 15px;
+  }
+}

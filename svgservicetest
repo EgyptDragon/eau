@@ -1,0 +1,18 @@
+  constructor(private svgGraphService: SvgGraphService) {}
+
+  ngAfterViewInit() {
+    this.loader = true
+    this.svgGraphService.getData().subscribe((svgData: ISomeType) => {
+      this.loader = false;
+      this.drawSvg(svgData)
+    })
+  }
+
+  private drawSvg(svgData: ISomeType) {
+      const element: HTMLElement = (d3.select('#svgChart').node() as HTMLElement);
+      if (!element) {
+          return;
+      }
+
+      // drawing here
+  }

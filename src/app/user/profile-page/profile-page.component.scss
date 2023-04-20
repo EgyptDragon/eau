@@ -1,0 +1,77 @@
+mat-card {
+  margin: 0;
+  border-radius: 28px;
+  box-shadow:
+  0 1px 1px rgba(129, 129, 129, 0.025),
+  0 2px 2px rgba(129, 129, 129, 0.025),
+  0 4px 4px rgba(129, 129, 129, 0.025),
+  0 8px 8px rgba(129, 129, 129, 0.025),
+  0 16px 16px rgba(129, 129, 129, 0.025);
+  padding: 12px 24px;
+}
+
+.mat-icon-button--small {
+  color: black;
+  background: #fafafa;
+  position: absolute;
+  left: 90px;
+  height: 24px;
+  width: 24px;
+  padding: 6px;
+  font-size: 12px;
+  mat-icon {
+    height: 12px;
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+  }
+}
+
+.mat-icon-button--small-border {
+  border: 4px solid #1f1f1f;
+  background:#fafafa;
+  position: absolute;
+  color: black;
+  background: #fafafa;
+  position: absolute;
+  left: 56px;
+  height: 28px;
+  width: 28px;
+  padding: 4px;
+  font-size: 12px;
+  mat-icon {
+    height: 12px;
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+  }
+}
+
+mat-list-item {
+  padding: 0;
+}
+
+.chip {
+  background: linear-gradient(to right top, #e3f6df, #cbf1df, #b3ebe5, #a0e3ee, #99d9f7, #a0d4fb, #aacffc, #b7c9fb, #c1cbfb, #cbcdfb, #d4cffb, #dcd1fa);
+  text-align: center;
+  // border: 4px solid #e3f6df;
+  display: block;
+  height: 12px;
+  width: 64px;
+  border-radius: 8px;
+  position: relative;
+  margin: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: google;
+  &:before {
+    content: attr(data);
+    background: #1f1f1f;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    border-radius: 7px;
+  }
+}

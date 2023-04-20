@@ -1,0 +1,93 @@
+mat-card {
+  margin: 0;
+  border-radius: 28px;
+  box-shadow:
+  0 1px 1px rgba(129, 129, 129, 0.025),
+  0 2px 2px rgba(129, 129, 129, 0.025),
+  0 4px 4px rgba(129, 129, 129, 0.025),
+  0 8px 8px rgba(129, 129, 129, 0.025),
+  0 16px 16px rgba(129, 129, 129, 0.025);
+  padding: 4px 4px;
+}
+
+section {
+  display: flex;
+  height: calc(100vh - 48px);
+  width: calc(100vw - 48px - 64px);
+  .controls-container {
+    flex: 1;
+    mat-list-item {
+      margin: 12px 0;
+    }
+    .control-item {
+      display:flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      margin: 12px 0px;
+      h4 {
+        margin-left: 12px;
+      }
+      .control-button {
+        min-width: 48px;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border-radius: 18px;
+      }
+    }
+  }
+  .map-container {
+    flex: 3;
+    .carte {
+      max-height: 100%;
+    }
+  }
+}
+
+.carte {
+  width: 85%;
+  margin: 0 auto;
+}
+path {
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-opacity: 1;
+  //fill: #86aae0;
+}
+g:hover path {
+  fill: #dcd1fa;
+  //fill: #86cce0;
+}
+g path:hover {
+  fill: #c5b5f6;
+  // fill: #86eee0;
+}
+
+path[data-score="40"]{
+  fill : #83D0CB;
+}
+path[data-score="30"]{
+  fill : #83D0CB;
+}
+path[data-score="20"]{
+  fill : #92CCDE;
+}
+path[data-score="10"]{
+  fill : #A8C7FA;
+}
+path[data-score="0"]{
+  fill : #7da6f6;
+}
+// 50 : #f5f8fe,
+// 100 : #e5eefe,
+// 200 : #d4e3fd,
+// 300 : #c2d8fc,
+// 400 : #b5cffb,
+// 500 : #a8c7fa,
+// 600 : #a0c1f9,
+// 700 : #97baf9,
+// 800 : #8db3f8,
+// 900 : #7da6f6,

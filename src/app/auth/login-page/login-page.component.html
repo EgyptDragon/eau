@@ -1,0 +1,43 @@
+<section>
+  <div style="display:flex;align-items:center;justify-content:center;z-index:2;position:absolute;top:0;bottom:0;left: 0; right:0; background: rgba(0,0,0,0.4);">
+    <h1 style="color:white;">moments</h1>
+    <div style="position:relative;">
+      <svg style="position:aboslute;top:0;" width="440" height="440" viewbox="0 0 440 440">
+        <path fill="#a8c7fa">
+        <animate
+              attributeName="d"
+              values="M 0 36 C 0 16.1177 16.1177 0 36 0 L 367.297 0 C 387.18 0 403.297 16.1177 403.297 36 L 403.297 382.516 C 403.297 402.398 387.18 418.516 367.297 418.516 L 36 418.516 C 16.1177 418.516 0 402.398 0 382.516 L 0 36 Z;
+              M 0 283.806 C 0.000001 154.473 188.611 115.237 201.649 0 L 201.649 0 C 221.64 115.237 403.297 160.286 403.297 283.806 L 403.297 283.806 C 374.615 438.425 221.531 418.516 201.649 418.516 L 201.649 418.516 C 181.766 418.516 26.9443 438.425 0 283.806 L 0 283.806 Z;"
+              dur="0.2s"
+              fill="freeze"
+              keySplines=" 0.185,0.675,0,0.995"
+              />
+        </path>
+      </svg>
+      <form style="position: absolute;top:0;" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-card-content>
+          <p>
+            <mat-form-field appearance="outline" color="primary">
+              <mat-label>mail</mat-label>
+              <input formControlName="mail" matInput placeholder="Placeholder">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+            </mat-form-field>
+          </p>
+          <p>
+          <mat-form-field appearance="outline">
+            <mat-label>password</mat-label>
+            <input type="password" formControlName="password" matInput placeholder="Placeholder">
+            <mat-icon matSuffix>lock</mat-icon>
+
+          </mat-form-field>
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>NEW HERE</button>
+          <button mat-button type="submit" [disabled]="!loginForm.valid" >LOG IN</button>
+        </mat-card-actions>
+      </form>
+    </div>
+  </div>
+</section>

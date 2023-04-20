@@ -1,0 +1,31 @@
+@import './../../../colors';
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+video{
+  position: absolute;
+  z-index:1;
+  width:100vw;
+}
+
+mat-card {
+  mat-card-header, mat-card-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  margin: 16px;
+  border-radius: 56px;
+  background-color: $pastel-violet;
+  box-shadow:
+  0 1px 1px rgba(129, 129, 129, 0.025),
+  0 2px 2px rgba(129, 129, 129, 0.025),
+  0 4px 4px rgba(129, 129, 129, 0.025),
+  0 8px 8px rgba(129, 129, 129, 0.025),
+  0 16px 16px rgba(129, 129, 129, 0.025);
+}
